@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from './sidebar';
+import Sidebar from './SideBar';
 import Header from './Header';
 import { Outlet, useLocation } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
