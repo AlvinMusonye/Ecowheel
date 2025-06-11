@@ -1,5 +1,5 @@
 import React from 'react';
-import SideBar from './SideBar';
+import Sidebar from './Sidebar';
 import Header from './Header';
 import { Outlet, useLocation } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
@@ -15,7 +15,7 @@ const AdminLayout = () => {
     <div className={`flex h-screen transition-colors ${
       isDarkMode ? 'bg-gray-900' : 'bg-gray-50'
     }`}>
-      <SideBar />
+      <Sidebar />
       <div className="flex-1 flex flex-col overflow-auto">
         <Header activeTab={activeTab} />
         <main className={`p-6 overflow-y-auto flex-1 transition-colors ${
