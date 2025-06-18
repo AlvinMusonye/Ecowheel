@@ -1,5 +1,9 @@
 #  EcoWheel Safari Kenya
 
+## 📊 Project Presentation
+
+[Click here to view the slides](./EcoWheel_Presentation.pd)
+
 Welcome to **EcoWheel Safari Kenya** – a sustainable tourism platform promoting eco-friendly safaris using electric vehicles in Kenya. The platform offers real-time bookings, educational content, and impact tracking, designed to make your travel both adventurous and environmentally responsible. 🌱
 
 ---
