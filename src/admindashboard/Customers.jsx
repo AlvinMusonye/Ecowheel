@@ -9,7 +9,7 @@ const Customers = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_URL = 'http://127.0.0.1:8000/accounts/api/admin/users/';
+  const API_URL = 'https://ecowheel-backend-5p47.onrender.com/accounts/api/admin/users/';
   const token = localStorage.getItem('access_token');
 
   const authHeaders = {

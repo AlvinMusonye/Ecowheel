@@ -54,7 +54,7 @@ const BookingsTab = () => {
     setUpdateError(null);
     try {
       await axios.patch(
-        `http://localhost:8000/bookings/api/bookings/${bookingId}/`,
+        `https://ecowheel-backend-5p47.onrender.com/bookings/api/bookings/${bookingId}/`,
         { status: newStatus },
         authHeaders
       );
