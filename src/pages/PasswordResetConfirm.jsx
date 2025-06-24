@@ -22,7 +22,7 @@ const PasswordResetConfirm = () => {
     }
 
     try {
-      await axios.post(`/accounts/api/password-reset-confirm/${uidb64}/${token}/`, {
+      await axios.post(`https://ecowheel-backend-5p47.onrender.com/accounts/api/password-reset-confirm/${uidb64}/${token}/`, {
         password: newPassword,
       });
       setMessage("Password has been reset successfully. Redirecting to login...");

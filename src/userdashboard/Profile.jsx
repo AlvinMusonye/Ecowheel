@@ -42,7 +42,7 @@ const Profile = () => {
       const res = await axios.post(CLOUDINARY_UPLOAD_URL, uploadData);
       const imageUrl = res.data.secure_url;
 
-      await axios.patch('http://127.0.0.1:8000/accounts/api/my-profile/', {
+      await axios.patch('https://ecowheel-backend-5p47.onrender.com/accounts/api/my-profile/', {
         profile_picture: imageUrl
       }, {
         headers: { Authorization: `Bearer ${token}` }
@@ -61,7 +61,7 @@ const Profile = () => {
     setLoading(true);
 
     try {
-      const res = await axios.patch('http://127.0.0.1:8000/accounts/api/my-profile/', formData, {
+      const res = await axios.patch('https://ecowheel-backend-5p47.onrender.com/accounts/api/my-profile/', formData, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setProfile(res.data.profile);

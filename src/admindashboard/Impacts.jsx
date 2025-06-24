@@ -17,7 +17,7 @@ const ImpactStatsForm = ({ userId }) => {
     if (!userId || !accessToken) return;
 
     setLoading(true);
-    fetch(`http://your-api-url/impact-stats/`, {
+    fetch(`https://ecowheel-backend-5p47.onrender.com/impact-stats/`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -59,7 +59,7 @@ const ImpactStatsForm = ({ userId }) => {
 
     try {
       // Try PUT first to update (if it exists), fallback to POST to create
-      const putResponse = await fetch(`http://your-api-url/impact-stats/`, {
+      const putResponse = await fetch(`https://ecowheel-backend-5p47.onrender.com/impact-stats/`, {
         method: 'PUT', // you may want to use PATCH if partial update is allowed
         headers: {
           Authorization: `Bearer ${accessToken}`,
@@ -73,7 +73,7 @@ const ImpactStatsForm = ({ userId }) => {
         setSuccessMsg('Impact stats updated successfully!');
       } else if (putResponse.status === 404) {
         // If no existing impact stats, create with POST
-        const postResponse = await fetch(`http://your-api-url/impact-stats/`, {
+        const postResponse = await fetch(`https://ecowheel-backend-5p47.onrender.com/impact-stats/`, {
           method: 'POST',
           headers: {
             Authorization: `Bearer ${accessToken}`,
