@@ -182,7 +182,7 @@ const Booking = () => {
                 type="submit"
                 className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-bold py-4 px-6 rounded-xl transition-all duration-200 transform hover:scale-[1.02] hover:shadow-lg"
               >
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center cursor-pointer">
                   <CreditCard className="w-5 h-5 mr-2" />
                   Book Now
                 </div>
