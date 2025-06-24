@@ -159,7 +159,7 @@ const ToursTab = () => {
                       src={
                         tour.image.startsWith("http")
                           ? tour.image
-                          : `http://127.0.0.1:8000${tour.image}`
+                          : `https://ecowheel-backend-5p47.onrender.com${tour.image}`
                       }
                       alt={tour.title}
                       className="object-cover w-full h-full"

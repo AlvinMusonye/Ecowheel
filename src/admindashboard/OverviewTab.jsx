@@ -60,7 +60,7 @@ const OverviewTab = ({ stats = {}, recentBookings = [], tours = [] }) => {
 
         // Fetch customers
         const customersResponse = await axios.get(
-          'http://127.0.0.1:8000/accounts/api/admin/users/',
+          'https://ecowheel-backend-5p47.onrender.com/accounts/api/admin/users/',
           { headers: { Authorization: `Bearer ${token}` } }
         );
 
