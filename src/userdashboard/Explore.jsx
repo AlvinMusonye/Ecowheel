@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, MessageCircle, Repeat2, Send, Plus, Image, X, Upload, Home, Search, Bell, User, Camera } from 'lucide-react';
 
-const API_BASE = 'http://localhost:8000/gallery/api/photos/';
+const API_BASE = 'https://ecowheel-backend-5p47.onrender.com/gallery/api/photos/';
 
 const Navbar = ({ onNewPostClick }) => {
   return (

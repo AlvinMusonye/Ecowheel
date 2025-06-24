@@ -72,7 +72,7 @@ const Tours = () => {
     const fetchTours = async () => {
       try {
         const token = localStorage.getItem('access_token');
-        const response = await axios.get('http://127.0.0.1:8000/tours/api/tours/', {
+        const response = await axios.get('https://ecowheel-backend-5p47.onrender.com/tours/api/tours/', {
           headers: {
             Authorization: `Bearer ${token}`,
           },

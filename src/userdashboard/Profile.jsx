@@ -12,7 +12,7 @@ const Profile = () => {
   const token = localStorage.getItem('access_token'); // adjust if you use a different token storage
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/accounts/api/myprofile/', {
+    axios.get('https://ecowheel-backend-5p47.onrender.com/accounts/api/myprofile/', {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then(res => {

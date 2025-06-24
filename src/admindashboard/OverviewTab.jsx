@@ -53,7 +53,7 @@ const OverviewTab = ({ stats = {}, recentBookings = [], tours = [] }) => {
       try {
         // Fetch total bookings
         const bookingsResponse = await axios.get(
-          'http://localhost:8000/bookings/api/bookings/admin/all/',
+          'https://ecowheel-backend-5p47.onrender.com/bookings/api/bookings/admin/all/',
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setTotalBookings(bookingsResponse.data.length);

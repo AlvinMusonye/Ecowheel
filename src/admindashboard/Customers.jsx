@@ -67,7 +67,7 @@ const Customers = () => {
   
     try {
       const response = await axios.delete(
-        `http://127.0.0.1:8000/accounts/api/userprofiles/${id}/delete/`,
+        `https://ecowheel-backend-5p47.onrender.com/accounts/api/userprofiles/${id}/delete/`,
         authHeaders
       );
   
