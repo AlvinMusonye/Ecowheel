@@ -17,7 +17,7 @@ const ImpactStatsForm = ({ userId }) => {
     if (!userId || !accessToken) return;
 
     setLoading(true);
-    fetch(`https://ecowheel-backend-5p47.onrender.com/impact-stats/`, {
+    fetch(`http://127.0.0.1:9000/impact-stats/`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${accessToken}`,

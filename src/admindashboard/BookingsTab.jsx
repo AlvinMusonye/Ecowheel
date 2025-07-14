@@ -12,7 +12,7 @@ const BookingsTab = () => {
   const [updatingStatus, setUpdatingStatus] = useState(false);
   const [updateError, setUpdateError] = useState(null);
 
-  const API_URL = 'https://ecowheel-backend-5p47.onrender.com/bookings/api/bookings/admin/all/';
+  const API_URL = 'http://127.0.0.1:9000/bookings/api/bookings/admin/all/';
   const token = localStorage.getItem('access_token');
 
   const authHeaders = {

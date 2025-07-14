@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Plus, Trash2 } from "lucide-react";
 
-const API_URL = "https://ecowheel-backend-5p47.onrender.com/tours/api/tours/";
+const API_URL = "http://127.0.0.1:9000/tours/api/tours/";
 const token = localStorage.getItem("access_token");
 
 const axiosInstance = axios.create({
-  baseURL: "https://ecowheel-backend-5p47.onrender.com",
+  baseURL: "http://127.0.0.1:9000/",
   headers: token ? { Authorization: `Bearer ${token}` } : {},
 });
 
