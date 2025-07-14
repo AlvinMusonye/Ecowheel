@@ -56,7 +56,7 @@ const Booking = () => {
 
     try {
       const response = await axios.post(
-        'https://ecowheel-backend-5p47.onrender.com/bookings/api/bookings/',
+        'http://127.0.0.1:9000/bookings/api/bookings/',
         formData,
         {
           headers: {

@@ -13,7 +13,7 @@ const PasswordResetRequest = () => {
     setError(null);
 
     try {
-      await axios.post('https://ecowheel-backend-5p47.onrender.com/accounts/api/password-reset/', {
+      await axios.post('http://127.0.0.1:9000/accounts/api/password-reset/', {
         email: email,
       });
       setMessage('Password reset link sent! Check your email.');

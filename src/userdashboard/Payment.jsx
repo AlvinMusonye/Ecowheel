@@ -42,7 +42,7 @@ const Payment = () => {
       };
 
       const response = await axios.post(
-        'https://ecowheel-backend-5p47.onrender.com/mpesa/api/stk-push/',
+        'http://127.0.0.1:9000/mpesa/api/stk-push/',
         payload,
         {
           headers: {
